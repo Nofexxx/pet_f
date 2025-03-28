@@ -133,3 +133,7 @@ def get_tag_attributes():
             unique_attributes.add(attribute.name)
 
     return jsonify({'success': True, 'unique_attributes': list(unique_attributes)})
+
+
+if __name__ == '__main__':
+    app.run(debug=True)
